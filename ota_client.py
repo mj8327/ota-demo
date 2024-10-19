@@ -132,8 +132,12 @@ def download(model, version, serial):
         })
     )
 
+    if response.status_code == 404:
+        print(response.json())
+        return 
+    
     response.raise_for_status()
-
+    
     tmp_file = Path(tempfile.gettempdir()) / f'{model}_{version}_{serial}.txt'
     with open(tmp_file, 'w') as f:
         f.write(response.content.decode('utf-8'))

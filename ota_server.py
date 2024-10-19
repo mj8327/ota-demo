@@ -128,7 +128,7 @@ def download_file():
     pub_path = DATA_PUBLISH / f'{model}_{version}.txt'
 
     if not pub_path.exists():
-        return jsonify({'error': 'File not found'}), 200
+        return jsonify({'error': 'File not found'}), 404
 
     save_record('server', 'download', pub_path.name, serial)
 
