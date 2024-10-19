@@ -130,7 +130,7 @@ def download_file():
     if not pub_path.exists():
         return jsonify({'error': 'File not found'}), 404
 
-    save_record('server', 'download', pub_path.name, serial)
+    save_record(model, 'download', pub_path.name, serial)
 
     return send_file(pub_path, as_attachment=True) 
 

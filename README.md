@@ -149,7 +149,7 @@ data
 ├── download
 │   └── model_a_1.0_001.txt
 ├── logs
-│   ├── server-download-20241019112914-001-model_a_1.0.txt
+│   ├── model_a-001-download-20241019112914-model_a_1.0.txt
 │   ├── server-publish-20241019112821-model_a_1.0.txt
 │   └── server-upload-20241019112815-model_a_1.0.txt
 ├── origin

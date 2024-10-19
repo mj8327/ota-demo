@@ -122,7 +122,7 @@ def save_record(role, action, filename, serial=None):
     when = datetime.now(UTC).strftime('%Y%m%d%H%M%S')
 
     if serial:
-        (DATA_LOGS / f'{role}-{action}-{when}-{serial}-{filename}').touch()
+        (DATA_LOGS / f'{role}-{serial}-{action}-{when}-{filename}').touch()
     else:
         (DATA_LOGS / f'{role}-{action}-{when}-{filename}').touch()
 
