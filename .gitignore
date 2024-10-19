@@ -4,6 +4,9 @@ data/
 # generated types
 __pycache__/
 
+# environment variables
+.env
+
 # macOS-specific files
 .DS_Store
 
