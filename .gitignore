@@ -1,0 +1,13 @@
+# data
+data/
+
+# generated types
+__pycache__/
+
+# macOS-specific files
+.DS_Store
+
+# pycharm-specific files
+.idea/
+
+vault-init.json

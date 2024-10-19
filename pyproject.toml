@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "astemo"
+version = "0.1.0"
+description = ""
+authors = ["mj8327 <mj8327@yahoo.ne.jp>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+flask = "^3.0.3"
+requests = "^2.32.3"
+hvac = {extras = ["parser"], version = "^2.3.0"}
+python-dotenv = "^1.0.1"
+niquests = "^3.9.1"
+beeprint = "^2.4.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
